@@ -1,3 +1,14 @@
+server:
+  port: ${PORT:3000}
+
 spring:
-  application:
-    name: booking-api
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:bookingdb}
+    username: ${DB_USER:bookinguser}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+instance:
+  name: ${INSTANCE_NAME:api-1}
