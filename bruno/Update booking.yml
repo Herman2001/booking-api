@@ -1,0 +1,26 @@
+info:
+  name: Update booking
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/bookings/1"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Herman",
+        "email": "herman@example.com",
+        "dateTime": "2026-11-15T19:00:00",
+        "numberOfPeople": 4,
+        "status": "CONFIRMED"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
