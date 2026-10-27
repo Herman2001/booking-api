@@ -11,4 +11,4 @@ spring:
       ddl-auto: update
 
 instance:
-  name: ${INSTANCE_NAME:api-1}
+  name: ${INSTANCE_NAME:local}
