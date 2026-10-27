@@ -1,0 +1,5 @@
+name: api-1
+variables:
+  - name: baseUrl
+    value: http://localhost:3001
+    description: ""
